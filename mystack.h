@@ -47,7 +47,7 @@ public:
     }
 
     void pop(){
-        if(isEmpty()){
+        if(!isEmpty()){
             Node* buff = topElement;
             topElement = topElement->previousElement;
             delete buff;
@@ -74,7 +74,7 @@ public:
 
     //if stack is empty - return true
     bool isEmpty(){
-        return (stackSize != 0);
+        return (stackSize == 0);
     }
 };
 
