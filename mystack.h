@@ -48,7 +48,7 @@ public:
 
     void pop(){
         if(!isEmpty()){
-            Node* buff = topElement;
+            Node *buff = topElement;
             topElement = topElement->previousElement;
             delete buff;
             stackSize--; // reduce the number of elements after each removal of element
