@@ -6,10 +6,8 @@
 using namespace std;
 
 template <typename T>
-class MyStack
-{
+class MyStack{
 private:
-
     struct Node{
         T m_data;
         Node *previousElement; // pointer to the previous element of the stack
@@ -24,8 +22,8 @@ private:
     Node *topElement = new Node();
     int stackSize;// number of elements in the stack
 public:
-    MyStack(){
-        stackSize = 0;// initial size of the stack is equal to zero
+    MyStack():stackSize(0){
+        // initial size of the stack is equal to zero
     }
     ~MyStack(){
         // destructor
@@ -64,9 +62,7 @@ public:
             delete buff;
             stackSize--;
         }
-
     }
-
 
     int size(){ // get stack size
         return stackSize;

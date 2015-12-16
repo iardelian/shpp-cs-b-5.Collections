@@ -18,4 +18,5 @@ TEMPLATE = app
 SOURCES += main.cpp
 
 HEADERS += \
-    mystack.h
+    mystack.h \
+    myqueue.h
