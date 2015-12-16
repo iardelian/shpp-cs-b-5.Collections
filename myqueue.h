@@ -1,6 +1,5 @@
 #ifndef MYQUEUE
 #define MYQUEUE
-
 #include <iostream>
 
 using namespace std;
