@@ -12,7 +12,11 @@ private:
         type m_data;
         Node *previousElement; // pointer to the previous element of the stack
 
+<<<<<<< HEAD
         Node(){
+=======
+        Node(){ 
+>>>>>>> origin/master
         //default constructor
         }
         Node(type data){ // constructor
