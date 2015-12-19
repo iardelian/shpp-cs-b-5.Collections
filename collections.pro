@@ -19,4 +19,5 @@ SOURCES += main.cpp
 
 HEADERS += \
     mystack.h \
-    myqueue.h
+    myqueue.h \
+    mydeque.h

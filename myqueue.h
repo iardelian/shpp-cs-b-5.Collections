@@ -5,11 +5,11 @@
 
 using namespace std;
 
-template <class T>
+template <typename type>
 class MyQueue{
     class Node{
     public:
-        T value;
+        type value;
         Node *next;
     };
     Node *begin;
@@ -20,9 +20,7 @@ public:
     MyQueue():begin(NULL),end(NULL),count(0){
     }
     // copy constructor
-    MyQueue(MyQueue &list){
-        begin = NULL;
-        end = NULL;
+    MyQueue(MyQueue &list):begin(NULL),end(NULL){
         Node *buff = list.begin;
         while(buff != NULL){
             MyQueue::value->push(buff->value);
@@ -38,14 +36,13 @@ public:
         }
     }
     // Add element to the end of the queue
-    void push(T m_value){
+    void push(type m_value){
         Node *buff = new Node;
         buff->value = m_value;
         buff->next = NULL;
         if(begin==NULL){
             begin = end = buff;
-        }
-        else{
+        }else{
             end->next=buff;
             end = buff;
         }
@@ -64,14 +61,14 @@ public:
     void pop(){
         if(isEmpty()){
             cout<<"Error: list is empty!"<<endl;
+            exit(1);
         }else{
             Node *temp = begin->next;
             if((begin != NULL)&&(temp != NULL)){
                 delete begin;
                 begin = temp;
                 count--;
-            }
-            else if((begin != NULL)&&(temp == NULL)){
+            }else if((begin != NULL)&&(temp == NULL)){
                 delete begin;
                 count = 0;
             }
@@ -86,11 +83,11 @@ public:
         return count;
     }
     // first element of the queue
-    T front(){
+    type front(){
         return begin->value;
     }
     // last element of the queue
-    T back(){
+    type back(){
         return end->value;
     }
     // clean queue
