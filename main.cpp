@@ -14,15 +14,15 @@ int main()
     for (int i=1;i<=5;i++){
         queue.push(i);
     }
-    cout<<"Queue size: "<<queue.size()<<" elements"<<endl;
-    cout<<"Elements of queue: ";
+    cout << "Queue size: " << queue.size() << " elements" << endl;
+    cout << "Elements of queue: ";
     queue.show();
-    cout<<"Delete element"<<endl;
-    cout<<"Delete element"<<endl;
+    cout << "Delete element" << endl;
+    cout << "Delete element" << endl;
     queue.pop();
     queue.pop();
-    cout<<"Queue size: "<<queue.size()<<" elements"<<endl;
-    cout<<"Elements of queue: ";
+    cout << "Queue size: " << queue.size() << " elements"<<endl;
+    cout << "Elements of queue: ";
     queue.show();
     cout << endl;
     
@@ -34,7 +34,7 @@ int main()
         deque.push_front(i);
     }
     cout << "Push front 5 elements" << endl;
-    cout<<"Deque size: "<<deque.size()<<endl;
+    cout << "Deque size: " << deque.size() << endl;
     cout << "Show deque elements: ";
     deque.show();
     cout << "Push back 4 elements" << endl;
@@ -43,16 +43,16 @@ int main()
     }
     cout << "Show deque elements: ";
     deque.show();
-    cout<<"Delete first element"<<endl;
+    cout << "Delete first element" << endl;
     deque.pop_front();
     cout << "Show deque elements: ";
     deque.show();
-    cout<<"Delete last element"<<endl;
+    cout << "Delete last element" << endl;
     deque.pop_back();
     cout << "Show deque elements: ";
     deque.show();
-    cout<<"Deque size: "<<deque.size()<<endl;
-    cout<<"Clean deque"<< endl;
+    cout << "Deque size: " << deque.size() << endl;
+    cout << "Clean deque" << endl;
     deque.clear();
     cout << "Show deque elements: ";
     deque.show();
@@ -64,15 +64,15 @@ int main()
     for (int i=1;i<=5;i++){
         stack.push(i);
     }
-    cout<<"Stack size: "<<stack.size()<<endl;
-    cout <<"Top stack element: " << stack.pop() << endl;
-    cout <<"Delete top element" << endl;
+    cout << "Stack size: " << stack.size() << endl;
+    cout << "Top stack element: " << stack.pop() << endl;
+    cout << "Delete top element" << endl;
     stack.top();
-    cout<<"Stack size: "<<stack.size()<<endl;
-    cout <<"Clear stack"<<endl;
+    cout << "Stack size: " << stack.size() << endl;
+    cout << "Clear stack" << endl;
     stack.clear();
-    cout<<"Stack size: "<<stack.size()<<endl;
-    cout <<"Delete top element" << endl;
+    cout<<"Stack size: " << stack.size() << endl;
+    cout << "Delete top element" << endl;
     stack.pop();
     cout << endl;
     
